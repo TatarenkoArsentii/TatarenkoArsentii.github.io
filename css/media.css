@@ -1,0 +1,17 @@
+@media screen and (max-width: 414px) {
+  .container {
+    max-width: 414px;
+  }
+  .container .logo {
+    margin-left: 25px;
+  }
+
+  .container .logo img {
+    width: 104px;
+    height: 100%;
+  }
+
+  .container .nav ul {
+    display: none;
+  }
+}

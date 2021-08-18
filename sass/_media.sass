@@ -1,0 +1,108 @@
+@media screen and (max-width: 414px)
+  .header
+    padding: 30px
+    min-height: 90px
+  .container
+    margin: 0 auto
+    max-width: 414px
+    position: relative
+    
+    .logo
+      margin-left: 25px
+      img
+        width: 104px
+        height: 100%
+    .nav
+      position: fixed
+      left: -100%
+      top: 0 
+      padding: 20px 15px
+      margin: 0
+      background-color: rgba(0, 0, 0, .8)
+      width: 50%
+      transition: 0.6s all
+      z-index: 10
+      &-active
+        left: 0      
+      ul
+          height: 100vh
+          flex-direction: column
+          justify-content: space-around
+          align-items: center
+          
+          
+      .nav-li
+        padding-right: 0
+        a
+          color: #fff
+        + .nav-li
+            margin-left: 0
+    .hamburger
+      display: block
+      position: absolute
+      right: 23px
+      top: 50%
+      transform: translateY(-50%)
+      width: 30px
+      height: 18px
+      span
+        display: block
+        height: 3px
+        width: 100%
+        background-color: #000
+        margin-bottom: 3px
+        transition: 0.6s all
+      &-active
+        span
+          margin-bottom: -3px
+          &:nth-child(1)
+            transform: translateY(3px) rotate(-45deg)
+          &:nth-child(2)
+            display: none
+          &:nth-child(3)
+            transform: translateY(3px) rotate(45deg)
+            
+  .restapp
+    .container
+      .restapp-wrap
+        padding: 10px
+        .restapp-title
+          font-size: 36px
+      .button-container
+        .button-style
+          + .button-style
+              margin-left: 0
+              margin-top: 17px
+  .apps-work
+    padding: 10px
+    margin-top: 50px
+    .container
+      .apps-work-first-wrap
+        padding: 20px
+        @include flex-dir-text
+        img
+          margin-top: 35px
+      .apps-work-second-wrap
+        padding: 20px
+        @include flex-dir-text
+        img
+          margin-top: 35px
+  .order 
+    max-width: 100%
+    .container
+      .order-wrap
+        padding: 10px
+        .button-container
+          display: flex
+          flex-direction: column
+          align-items: center
+          .button-style
+            + .button-style
+              margin: 0
+              margin-top: 10px
+        .order-title
+          font-size: 36px
+  .footer
+    .container
+      min-height: 100px
+      padding: 15px       
